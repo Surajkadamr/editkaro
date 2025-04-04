@@ -119,8 +119,8 @@ export default function Page() {
 
     // Close modal when clicking outside
     useEffect(() => {
-        function handleClickOutside(event) {
-            if (modalRef.current && !modalRef.current.contains(event.target)) {
+        function handleClickOutside(event: MouseEvent) {
+            if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
                 setSelectedVideo(null);
             }
         }
