@@ -1,6 +1,14 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+type PortfolioItem = {
+    id: number;
+    title: string;
+    category: string;
+    thumbnail: string;
+    videoUrl: string;
+    description: string;
+};
 
 export default function Page() {
     // Video categories
@@ -98,7 +106,7 @@ export default function Page() {
 
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [filteredItems, setFilteredItems] = useState(portfolioItems);
-    const [selectedVideo, setSelectedVideo] = useState(null);
+    const [selectedVideo, setSelectedVideo] = useState<PortfolioItem | null>(null);
     const [isVisible, setIsVisible] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const modalRef = useRef<HTMLDivElement>(null);
@@ -133,13 +141,13 @@ export default function Page() {
     }, [modalRef]);
 
     // Handle category selection
-    const handleCategoryChange = (category) => {
+    const handleCategoryChange = (category: string) => {
         setSelectedCategory(category);
         setIsMenuOpen(false);
     };
 
     // Open video modal
-    const openVideoModal = (item) => {
+    const openVideoModal = (item: PortfolioItem) => {
         setSelectedVideo(item);
         document.body.style.overflow = 'hidden';
     };
