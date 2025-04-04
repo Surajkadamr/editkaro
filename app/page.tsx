@@ -280,7 +280,7 @@ export default function Page() {
             >
                 <div className="absolute inset-0 z-0" data-oid="658lwcx">
                     <div
-                        className="absolute inset-0 bg-black/70 z-10 left-0 top-[3px]"
+                        className="absolute inset-0 bg-black/70 z-10 left-[1280px] top-[270px]"
                         data-oid="frxlnkw"
                     ></div>
                     <video
