@@ -258,7 +258,7 @@ export default function Page() {
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
                         Professional video editing and social media marketing services that elevate
-                        your brand's presence
+                        your brand&apos;s presence
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <a
