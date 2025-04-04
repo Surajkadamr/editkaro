@@ -279,7 +279,10 @@ export default function Page() {
                 data-oid="g63bhca"
             >
                 <div className="absolute inset-0 z-0" data-oid="658lwcx">
-                    <div className="absolute inset-0 bg-black/70 z-10" data-oid="frxlnkw"></div>
+                    <div
+                        className="absolute inset-0 bg-black/70 z-10 left-0 top-[3px]"
+                        data-oid="frxlnkw"
+                    ></div>
                     <video
                         className="w-full h-full object-cover"
                         autoPlay
