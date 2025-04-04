@@ -101,7 +101,8 @@ export default function Page() {
     const [selectedVideo, setSelectedVideo] = useState(null);
     const [isVisible, setIsVisible] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const modalRef = useRef(null);
+    const modalRef = useRef<HTMLDivElement>(null);
+
 
     // Filter items based on selected category
     useEffect(() => {
